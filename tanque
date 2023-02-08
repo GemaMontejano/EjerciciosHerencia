@@ -1,0 +1,17 @@
+package ClasesHerencia;
+
+public class tanque extends Vehiculo {
+
+	public tanque(int velocidad, int direccion) {
+		super(velocidad, direccion);
+	}
+
+	public void izquierda() {
+		setDireccion(direccion += 90);
+	}
+
+	public void derecha() {
+		setDireccion(direccion -= 90);
+	}
+
+}
