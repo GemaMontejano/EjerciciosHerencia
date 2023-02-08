@@ -1,0 +1,14 @@
+package ClasesHerencia;
+
+public class coche extends Vehiculo {
+
+	public coche(int velocidad, int direccion) {
+		super(velocidad, direccion);
+	}
+
+	public void setVelocidad(int velocidad) {
+		if (velocidad > 0 && velocidad > 150) {
+			this.velocidad = velocidad;
+		}
+	}
+}
