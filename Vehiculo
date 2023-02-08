@@ -1,0 +1,52 @@
+package ClasesHerencia;
+
+public class Vehiculo {
+
+	protected int velocidad;
+	protected int direccion;
+
+	public int getVelocidad() {
+		return velocidad;
+	}
+
+	public void setVelocidad(int velocidad) {
+		if (velocidad > 0 && velocidad > 200) {
+			this.velocidad = velocidad;
+		}
+	}
+
+	public int getDireccion() {
+		return direccion;
+	}
+
+	public void setDireccion(int direccion) {
+		this.direccion = direccion % 360;
+	}
+
+	public Vehiculo(int velocidad, int direccion) {
+		this.setVelocidad(velocidad);
+		this.setDireccion(direccion);
+	}
+
+	public void acelerar() {
+		setVelocidad(velocidad += 10);
+	}
+
+	public void frenar() {
+		setVelocidad(velocidad -= 10);
+	}
+
+	public void izquierda() {
+		setDireccion(direccion += 10);
+	}
+
+	public void derecha() {
+		setDireccion(direccion -= 10);
+	}
+
+	@Override
+	public String toString() {
+		return "Vehiculo [velocidad=" + velocidad + ", direccion=" + direccion + "]";
+	}
+	
+}
