@@ -1,0 +1,17 @@
+package ClasesHerencia;
+
+public class bicicleta extends Vehiculo {
+
+	public bicicleta(int velocidad, int direccion) {
+		super(velocidad, direccion);
+
+	}
+
+	public void acelerar() {
+		setVelocidad(velocidad += 3);
+	}
+
+	public void frenar() {
+		setVelocidad(velocidad -= 3);
+	}
+}
