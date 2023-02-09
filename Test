@@ -8,9 +8,9 @@ public class TestHerencia extends Vehiculo {
 	}
 
 	public static void main(String[] args) {
-		Vehiculo coche1 = new Vehiculo(140,50);
-		Vehiculo tanque1 = new Vehiculo(50,70);
-		Vehiculo bicicleta1 = new Vehiculo(10,15);
+		coche coche1 = new coche(140,50);
+		tanque tanque1 = new tanque(50,70);
+		bicicleta bicicleta1 = new bicicleta(10,15);
 		System.out.println(bicicleta1);
 		bicicleta1.acelerar();
 		System.out.println(bicicleta1);
@@ -20,6 +20,7 @@ public class TestHerencia extends Vehiculo {
 		System.out.println(coche1);
 		coche1.frenar();
 		System.out.println(coche1);
+		System.out.println(coche1.getVelocidad());
 	
 
 	}
