@@ -10,7 +10,7 @@ public class Vehiculo {
 	}
 
 	public void setVelocidad(int velocidad) {
-		if (velocidad > 0 && velocidad > 200) {
+		if (velocidad > 0 && velocidad < 200) {
 			this.velocidad = velocidad;
 		}
 	}
