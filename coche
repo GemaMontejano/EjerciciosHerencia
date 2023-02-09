@@ -7,7 +7,7 @@ public class coche extends Vehiculo {
 	}
 
 	public void setVelocidad(int velocidad) {
-		if (velocidad > 0 && velocidad > 150) {
+		if (velocidad > 0 && velocidad < 150) {
 			this.velocidad = velocidad;
 		}
 	}
