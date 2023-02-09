@@ -1,0 +1,27 @@
+package ClasesHerencia;
+
+public class TestHerencia extends Vehiculo {
+
+	public TestHerencia(int velocidad, int direccion) {
+		super(velocidad, direccion);
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		Vehiculo coche1 = new Vehiculo(140,50);
+		Vehiculo tanque1 = new Vehiculo(50,70);
+		Vehiculo bicicleta1 = new Vehiculo(10,15);
+		System.out.println(bicicleta1);
+		bicicleta1.acelerar();
+		System.out.println(bicicleta1);
+		System.out.println(tanque1);
+		tanque1.izquierda();
+		System.out.println(tanque1);
+		System.out.println(coche1);
+		coche1.frenar();
+		System.out.println(coche1);
+	
+
+	}
+
+}
